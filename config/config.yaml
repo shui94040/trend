@@ -43,7 +43,11 @@ schedule:
   enabled: true                         # 是否启用调度系统
   preset: "morning_evening"             # 预设模板名称（见上方说明）
 
+on:
+  schedule:
+    - cron: "0 2,6,10 * * *"  # 对应北京时间 10:00、14:00、18:00
 
+ 
 # ===============================================================
 # 2. 数据源 - 热榜平台
 #
@@ -142,7 +146,7 @@ rss:
 # - incremental：最少打扰，只看新增
 # ===============================================================
 report:
-  mode: "current"                     # daily | current | incremental（schedule 开启时作为默认值）
+  mode: "daily"                     # daily | current | incremental（schedule 开启时作为默认值）
 
   display_mode: "keyword"             # 分组维度: keyword | platform
                                       # keyword: 按关键词分组显示（默认）
