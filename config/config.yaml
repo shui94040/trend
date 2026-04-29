@@ -61,7 +61,6 @@ platforms:
       name: "百度热搜"
     - id: "bilibili-hot-search"
       name: "bilibili 热搜"
-      name: "贴吧"
     - id: "weibo"
       name: "微博"
     - id: "douyin"
